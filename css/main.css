@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -10,7 +14,7 @@ header {
 
 
 .container {
-  max-width: 970px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -27,11 +31,17 @@ ul.nav {
 
 ul.nav li {
   display: inline;
-  margin-right: 60px;
+  margin-right: 50px;
 }
 
 .about {
   width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.my-work {
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -71,12 +81,30 @@ p {
   color: #242424;
 }
 
-.about {
+.about,
+.my-work {
   margin-bottom: 50px;
 }
 
 .about span {
   font-weight: 700;
+}
+
+.my-work span {
+  margin-bottom: 20px;
+}
+
+.row {
+  overflow: auto;
+}
+
+.col {
+  width: 100%;
+  padding: 10px;
+}
+
+.col img {
+  margin: 10px 0px;
 }
 
 img {
@@ -94,4 +122,16 @@ footer p {
   color: #fff;
   font-size: 1em;
   font-weight: 700;
+}
+
+@media all and (min-width: 700px){
+  .container {
+    max-width: 970px;
+  }
+
+.col {
+  width: 33.3333333%;
+  float: left;
+  padding: 10px;
+}
 }
