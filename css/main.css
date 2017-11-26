@@ -3,34 +3,49 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
-}
-
-header {
-  margin: 0 auto;
-  width: 250px;
+  margin: 10px;
+  padding: 10px;
 }
 
 
 .container {
-  max-width: 700px;
+  max-width: 970px;
   margin: 0 auto;
 }
 
 nav {
-  max-width: 450px;
+  max-width: 600px;
   margin: 0 auto;
+  text-align: center;
 }
 
+nav img {
+  width: 250px;
+  height: 75px;
+  transition: all .5s;
+}
+
+nav img:hover {
+  opacity: .5;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+nav a:hover{
+  color: #16b793;
+  text-decoration: underline;
+}
 
 ul.nav {
   list-style: none;
   padding: 10px;
-}
-
-ul.nav:first-of-type{
-  margin-left: 30px;
+  font-weight: bold;
 }
 
 ul.nav li {
@@ -38,8 +53,13 @@ ul.nav li {
   margin-right: 30px;
 }
 
+.main-image img {
+  width: 100%;
+  margin: 20px 0px;
+}
+
 .about {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   text-align: center;
 }
@@ -53,13 +73,12 @@ ul.nav li {
 h1 {
   font-size: 3em;
   font-weight: 700;
-  text-align: center;
   margin-bottom: 20px;
   color: aquamarine;
   text-transform: uppercase;
 }
 
-h6 {
+h2 {
   font-weight: 700;
   font-style: italic;
   font-size: 1.3em;
@@ -67,10 +86,28 @@ h6 {
   color: aquamarine;
 }
 
-a {
+h3 {
+  font-size: 2em;
   font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+
+a {
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
   color: teal;
 }
 
@@ -94,8 +131,17 @@ p {
   font-weight: 700;
 }
 
-.my-work span {
+.my-work h2 {
   margin-bottom: 20px;
+}
+
+.my-work a {
+  transition: all .2s;
+  color: #242424;
+}
+
+.my-work a:hover {
+  color: teal;
 }
 
 .row {
@@ -108,13 +154,24 @@ p {
 }
 
 .col img {
+  transition: all .9s;
   margin: 10px 0px;
+}
+
+.col img:hover {
+  opacity: .5;
+}
+
+.gallery-sub-page {
+  margin: 50px 20px 50px 20px;
+  text-align: center;
 }
 
 img {
   margin-bottom: 10px;
   width: 100%;
 }
+
 
 footer {
   text-align: center;
@@ -128,14 +185,30 @@ footer p {
   font-weight: 700;
 }
 
-@media all and (min-width: 700px){
-  .container {
+@media all and (min-width: 600px){
+  nav {
     max-width: 970px;
+    height: 75px;
   }
 
-.col {
-  width: 33.3333333%;
-  float: left;
-  padding: 10px;
+  nav img {
+    float: left;
+  }
+
+  ul.nav {
+    float: right;
+    margin-top: 20px;
+  }
 }
+
+@media all and (min-width: 780px) {
+  .col {
+    width: 33.33%;
+    float: left;
+    padding: 15px 25px 15px 15px;
+  }
+
+  .col:last-of-type{
+    border: none;
+  }
 }
