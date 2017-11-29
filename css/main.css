@@ -53,6 +53,10 @@ ul.nav li {
   margin-right: 30px;
 }
 
+nav.project-page {
+  margin-bottom: 20px;
+}
+
 .main-image img {
   width: 100%;
   margin: 20px 0px;
@@ -173,6 +177,21 @@ p {
   height: 340px;
   width: 730px;
   display: none;
+}
+
+.slideshow-button {
+  margin: 0 auto;
+}
+
+.slideshow-button img {
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+  transition: all .3s;
+}
+
+.slideshow-button img:hover {
+  opacity: .5;
 }
 
 .gallery-sub-page {
