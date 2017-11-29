@@ -5,8 +5,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
-  margin: 10px;
-  padding: 10px;
+  margin-top: 10px;
 }
 
 
@@ -167,20 +166,22 @@ p {
 }
 
 .slideshow-image {
-  height: 340px;
-  width: 730px;
+  /*min-height: 340px;*/
+  max-width: 730px;
   margin: 0 auto;
 }
 
 .slideshow-image img {
-  position: absolute;
-  height: 340px;
-  width: 730px;
+  /*position: absolute;*/
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  max-width: 730px;
   display: none;
 }
 
 .slideshow-button {
-  margin: 0 auto;
+  text-align: center;
 }
 
 .slideshow-button img {

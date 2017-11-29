@@ -5,12 +5,12 @@ $(document).ready(function(){
     console.log('slides: ', slides);
     var currentSlideIndex = 0; // start out at slide 0
     var slideCount = slides.length; // get how many items are in our slideshow-image
-    slides.eq(currentSlideIndex).fadeIn();
+    slides.eq(currentSlideIndex).show();
 
     // our function to run
     doSlides = function(direction){
       // hide current slides
-      slides.eq(currentSlideIndex).fadeOut(500);
+      slides.eq(currentSlideIndex).hide();
 
       if (direction === 'next'){
         // if statement to check if our current slide index = slideCount -1;
@@ -33,7 +33,7 @@ $(document).ready(function(){
       }
 
       console.log('currentSlideIndex: ', currentSlideIndex);
-      slides.eq(currentSlideIndex).fadeIn(500);
+      slides.eq(currentSlideIndex).show();
     };
 
 
