@@ -162,13 +162,25 @@ p {
   opacity: .5;
 }
 
+.slideshow-image {
+  height: 340px;
+  width: 730px;
+  margin: 0 auto;
+}
+
+.slideshow-image img {
+  position: absolute;
+  height: 340px;
+  width: 730px;
+  display: none;
+}
+
 .gallery-sub-page {
   margin: 50px 20px 50px 20px;
   text-align: center;
 }
 
 img {
-  margin-bottom: 10px;
   width: 100%;
 }
 
