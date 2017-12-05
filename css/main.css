@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover{
-  color: #16b793;
+  color: #2687ee;
   text-decoration: underline;
 }
 
@@ -78,11 +78,19 @@ nav.project-page {
   text-align: center;
 }
 
+.contact h1 {
+  padding-top: 20px;
+}
+
+.contact img {
+  padding-top: 30px;
+}
+
 h1 {
   font-size: 3em;
   font-weight: 700;
   margin-bottom: 20px;
-  color: aquamarine;
+  color: #ec4c2e;
   text-transform: uppercase;
 }
 
@@ -91,13 +99,14 @@ h2 {
   font-style: italic;
   font-size: 1.3em;
   margin: 20px 0;
-  color: aquamarine;
+  color: #ec4c2e;
 }
 
 h3 {
   font-size: 2em;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #ec4c2e;
 }
 
 h4 {
@@ -112,11 +121,16 @@ h5 {
   padding-bottom: 20px;
 }
 
+h6 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
 
 a {
   text-decoration: none;
   font-size: 1em;
-  color: teal;
+  color: #2687ee;
 }
 
 a:hover {
@@ -143,13 +157,21 @@ p {
   margin-bottom: 20px;
 }
 
+.my-work h4 {
+  margin-bottom: 0px;
+}
+
+.my-work p {
+  margin: 0px;
+}
+
 .my-work a {
   transition: all .2s;
   color: #242424;
 }
 
 .my-work a:hover {
-  color: teal;
+  color: #2687ee;
 }
 
 .row {
@@ -220,6 +242,14 @@ footer p {
   color: #fff;
   font-size: 1em;
   font-weight: 700;
+}
+
+footer#project {
+  margin-top: 200px;
+}
+
+footer#contact-bottom {
+  margin-top: 200px;
 }
 
 @media all and (min-width: 600px){
